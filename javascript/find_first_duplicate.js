@@ -14,6 +14,8 @@ if (require.main === module) {
   console.log("Expecting: 5");
   console.log("=>", findFirstDuplicate([1,2,3,4,5,5,6,7,8]));
 
+  console.log("");
+
   console.log("Expecting: 3");
   console.log("=>", findFirstDuplicate([2, 1, 3, 3, 2]));
 
@@ -21,6 +23,11 @@ if (require.main === module) {
 
   console.log("Expecting: -1");
   console.log("=>", findFirstDuplicate([1, 2, 3, 4]));
+
+  console.log("");
+
+  console.log("Expecting: -1");
+  console.log("=>", findFirstDuplicate([]));
 }
 
 module.exports = findFirstDuplicate;
